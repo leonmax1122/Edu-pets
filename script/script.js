@@ -1,3 +1,15 @@
+const canvas = document.getElementById('symbols');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+
 const symbols = ['π','√','∞','∑','∆','≠','≈','∫','∂'];
 const particles = [];
 
